@@ -1,0 +1,162 @@
+{
+  "source": "analysis/all_models_summary.json",
+  "source_commit": "20d61491f7b5187f05d97eca487dbeb7814c3442",
+  "method": "Descriptive calculations from saved reports only; no model runs, vector refitting, or new significance tests.",
+  "per_model": {
+    "qwen3_1.7b": {
+      "neutral_one_vs_rest_auroc": 0.9995722765388102,
+      "macro_auroc_excluding_neutral": 0.8792747746333227,
+      "predicted_class_counts": {
+        "anger": 271,
+        "disgust": 707,
+        "fear": 1216,
+        "joy": 435,
+        "neutral": 1242,
+        "sadness": 4266,
+        "surprise": 972
+      },
+      "predicted_sadness_fraction": 0.4683280272258206,
+      "true_sadness_fraction": 0.16313536063234163,
+      "pc1_variance": 0.6666817665100098,
+      "neutral_direction_norm_ratio_to_largest_other": 2.335179318893214
+    },
+    "qwen2.5_3b": {
+      "neutral_one_vs_rest_auroc": 0.9992874613511084,
+      "macro_auroc_excluding_neutral": 0.8756587639881277,
+      "predicted_class_counts": {
+        "anger": 1253,
+        "disgust": 742,
+        "fear": 556,
+        "joy": 894,
+        "neutral": 3097,
+        "sadness": 2297,
+        "surprise": 270
+      },
+      "predicted_sadness_fraction": 0.25216818531123064,
+      "true_sadness_fraction": 0.16313536063234163,
+      "pc1_variance": 0.6875578165054321,
+      "neutral_direction_norm_ratio_to_largest_other": 2.483594752009588
+    },
+    "granite3.3_2b": {
+      "neutral_one_vs_rest_auroc": 0.9977784129256599,
+      "macro_auroc_excluding_neutral": 0.8672228960355677,
+      "predicted_class_counts": {
+        "anger": 805,
+        "disgust": 1145,
+        "fear": 792,
+        "joy": 2256,
+        "neutral": 908,
+        "sadness": 982,
+        "surprise": 2221
+      },
+      "predicted_sadness_fraction": 0.10780546712043035,
+      "true_sadness_fraction": 0.16313536063234163,
+      "pc1_variance": 0.6634811162948608,
+      "neutral_direction_norm_ratio_to_largest_other": 2.3395676424986522
+    },
+    "smollm2_1.7b": {
+      "neutral_one_vs_rest_auroc": 0.9997197624546921,
+      "macro_auroc_excluding_neutral": 0.8958241420519097,
+      "predicted_class_counts": {
+        "anger": 571,
+        "disgust": 1136,
+        "fear": 702,
+        "joy": 562,
+        "neutral": 935,
+        "sadness": 5015,
+        "surprise": 188
+      },
+      "predicted_sadness_fraction": 0.5505543967504666,
+      "true_sadness_fraction": 0.16313536063234163,
+      "pc1_variance": 0.6180588603019714,
+      "neutral_direction_norm_ratio_to_largest_other": 2.2465919761619206
+    },
+    "llama3.2_3b": {
+      "neutral_one_vs_rest_auroc": 0.9976469487581572,
+      "macro_auroc_excluding_neutral": 0.8840557717953474,
+      "predicted_class_counts": {
+        "anger": 952,
+        "disgust": 1250,
+        "fear": 1472,
+        "joy": 763,
+        "neutral": 1044,
+        "sadness": 3008,
+        "surprise": 620
+      },
+      "predicted_sadness_fraction": 0.33022285651553407,
+      "true_sadness_fraction": 0.16313536063234163,
+      "pc1_variance": 0.608653724193573,
+      "neutral_direction_norm_ratio_to_largest_other": 2.1850058385162243
+    },
+    "phi3.5_mini": {
+      "neutral_one_vs_rest_auroc": 0.9996110434478345,
+      "macro_auroc_excluding_neutral": 0.8950489991664108,
+      "predicted_class_counts": {
+        "anger": 1,
+        "disgust": 0,
+        "fear": 448,
+        "joy": 67,
+        "neutral": 87,
+        "sadness": 8390,
+        "surprise": 116
+      },
+      "predicted_sadness_fraction": 0.9210670765177297,
+      "true_sadness_fraction": 0.16313536063234163,
+      "pc1_variance": 0.5968529582023621,
+      "neutral_direction_norm_ratio_to_largest_other": 2.196290272486473
+    }
+  },
+  "rsa_sensitivity": {
+    "emotion_directions": {
+      "all_erc7_pairs": {
+        "emotion_pair_count": 21,
+        "model_pair_count": 15,
+        "mean_pearson_rsa": 0.9776074066506263,
+        "min_pearson_rsa": 0.9499608807431646,
+        "max_pearson_rsa": 0.9910497862142199
+      },
+      "without_neutral_pairs": {
+        "emotion_pair_count": 15,
+        "model_pair_count": 15,
+        "mean_pearson_rsa": 0.9692449188017382,
+        "min_pearson_rsa": 0.9247348946171273,
+        "max_pearson_rsa": 0.9927314581392376
+      }
+    },
+    "contextual_ai": {
+      "all_erc7_pairs": {
+        "emotion_pair_count": 21,
+        "model_pair_count": 15,
+        "mean_pearson_rsa": 0.972124451408249,
+        "min_pearson_rsa": 0.9210559471833235,
+        "max_pearson_rsa": 0.9930403182564022
+      },
+      "without_neutral_pairs": {
+        "emotion_pair_count": 15,
+        "model_pair_count": 15,
+        "mean_pearson_rsa": 0.9788363836486457,
+        "min_pearson_rsa": 0.9339879390770129,
+        "max_pearson_rsa": 0.9936122333640935
+      }
+    },
+    "contextual_human": {
+      "all_erc7_pairs": {
+        "emotion_pair_count": 21,
+        "model_pair_count": 15,
+        "mean_pearson_rsa": 0.9674924112351231,
+        "min_pearson_rsa": 0.9312515172012064,
+        "max_pearson_rsa": 0.9814807403098548
+      },
+      "without_neutral_pairs": {
+        "emotion_pair_count": 15,
+        "model_pair_count": 15,
+        "mean_pearson_rsa": 0.9706685748522645,
+        "min_pearson_rsa": 0.9408851253447039,
+        "max_pearson_rsa": 0.9953819742103108
+      }
+    }
+  },
+  "rsa_sensitivity_note": "The neutral sensitivity calculation drops all pairwise relationships involving neutral from each fixed saved cosine matrix. Directions and centering are unchanged, so this is not a six-class retraining experiment.",
+  "source_sha256": "ab938a3530d1c5818deececfd88c7b76116a824c2d4a3185b5a99689b6594596",
+  "rsa_method": "For each model, flatten the upper triangle of its saved class cosine matrix, optionally excluding entries involving neutral. Compute Pearson correlations for all 15 unordered model pairs and average them."
+}
