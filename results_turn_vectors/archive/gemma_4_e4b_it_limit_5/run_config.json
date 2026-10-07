@@ -1,0 +1,15 @@
+{
+  "input": "/Users/adamvu/AI_for_psychology/playground/emotion_vector_replication/emotion_dialogues.jsonl",
+  "model": "google/gemma-4-E4B-it",
+  "device": "mps",
+  "dtype": "torch.float16",
+  "max_context": 2048,
+  "num_dialogues": 5,
+  "num_turns": 67,
+  "num_layers": 42,
+  "target_layer": 28,
+  "hidden_size": 2560,
+  "vector_dtype": "float16",
+  "pooling": "mean over tokens belonging only to the target utterance",
+  "context": "all preceding tokens when full dialogue fits; otherwise bounded left context"
+}

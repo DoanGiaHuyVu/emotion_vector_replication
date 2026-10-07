@@ -1,0 +1,15 @@
+{
+  "input": "/Users/adamvu/AI_for_psychology/playground/emotion_vector_replication/emotion_dialogues.jsonl",
+  "model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "device": "mps",
+  "dtype": "torch.float16",
+  "max_context": 2048,
+  "num_dialogues": 20,
+  "num_turns": 281,
+  "num_layers": 24,
+  "target_layer": 16,
+  "hidden_size": 2048,
+  "vector_dtype": "float16",
+  "pooling": "mean over tokens belonging only to the target utterance",
+  "context": "all preceding tokens when full dialogue fits; otherwise bounded left context"
+}

@@ -1,0 +1,15 @@
+{
+  "input": "/Users/adamvu/AI_for_psychology/playground/emotion_vector_replication/emotion_dialogues.jsonl",
+  "model": "microsoft/Phi-3.5-mini-instruct",
+  "device": "mps",
+  "dtype": "torch.float16",
+  "max_context": 2048,
+  "num_dialogues": 20,
+  "num_turns": 281,
+  "num_layers": 32,
+  "target_layer": 21,
+  "hidden_size": 3072,
+  "vector_dtype": "float16",
+  "pooling": "mean over tokens belonging only to the target utterance",
+  "context": "all preceding tokens when full dialogue fits; otherwise bounded left context"
+}

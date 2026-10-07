@@ -1,0 +1,1374 @@
+{
+  "erc7": {
+    "all": {
+      "dialogue_group_cv": {
+        "accuracy": 0.6416322607422942,
+        "balanced_accuracy": 0.6580602419394792,
+        "macro_f1": 0.6593270875369239,
+        "recall": {
+          "anger": 0.6228248259860789,
+          "disgust": 0.5497129042006649,
+          "fear": 0.5572485851110144,
+          "joy": 0.7227691826847945,
+          "neutral": 0.9338900487125957,
+          "sadness": 0.7089623283013736,
+          "surprise": 0.5110138185798331
+        },
+        "f1": {
+          "anger": 0.5846321377526714,
+          "disgust": 0.6460090562017226,
+          "fear": 0.5885959534028203,
+          "joy": 0.7391130643228127,
+          "neutral": 0.9189682720839992,
+          "sadness": 0.5968628348980993,
+          "surprise": 0.541108294096342
+        },
+        "n": 45777,
+        "confusion_matrix": [
+          [
+            4295,
+            520,
+            522,
+            251,
+            49,
+            705,
+            554
+          ],
+          [
+            1316,
+            3638,
+            239,
+            240,
+            50,
+            780,
+            355
+          ],
+          [
+            579,
+            95,
+            3840,
+            144,
+            148,
+            1325,
+            760
+          ],
+          [
+            325,
+            113,
+            110,
+            4625,
+            22,
+            795,
+            409
+          ],
+          [
+            28,
+            6,
+            71,
+            24,
+            4026,
+            45,
+            111
+          ],
+          [
+            492,
+            167,
+            613,
+            265,
+            31,
+            5213,
+            572
+          ],
+          [
+            762,
+            106,
+            762,
+            567,
+            125,
+            1252,
+            3735
+          ]
+        ],
+        "method": "multinomial_naive_bayes_unigram_surface_control",
+        "max_vocab": 5000,
+        "group_key": "dialogue_id",
+        "interpretation": "This is a surface-form control, not a mechanistic probe. Strong performance means the synthetic text itself exposes lexical/style cues that may also make internal representations easy to classify."
+      },
+      "topic_group_cv": {
+        "accuracy": 0.6344670904602748,
+        "balanced_accuracy": 0.6499350963007817,
+        "macro_f1": 0.6522988795993421,
+        "recall": {
+          "anger": 0.6154292343387471,
+          "disgust": 0.5472952553641584,
+          "fear": 0.5534755478159918,
+          "joy": 0.718549773402094,
+          "neutral": 0.9079099976803526,
+          "sadness": 0.7016183870529036,
+          "surprise": 0.5052674784512245
+        },
+        "f1": {
+          "anger": 0.5798606366990027,
+          "disgust": 0.6424833702882484,
+          "fear": 0.5818903043710428,
+          "joy": 0.7346221441124781,
+          "neutral": 0.9045528079500811,
+          "sadness": 0.5883560472144609,
+          "surprise": 0.5343268465600811
+        },
+        "n": 45777,
+        "confusion_matrix": [
+          [
+            4244,
+            524,
+            528,
+            258,
+            51,
+            744,
+            547
+          ],
+          [
+            1306,
+            3622,
+            263,
+            243,
+            48,
+            786,
+            350
+          ],
+          [
+            585,
+            95,
+            3814,
+            142,
+            153,
+            1341,
+            761
+          ],
+          [
+            347,
+            114,
+            103,
+            4598,
+            19,
+            805,
+            413
+          ],
+          [
+            38,
+            11,
+            95,
+            25,
+            3914,
+            68,
+            160
+          ],
+          [
+            478,
+            174,
+            636,
+            283,
+            33,
+            5159,
+            590
+          ],
+          [
+            744,
+            117,
+            779,
+            570,
+            125,
+            1281,
+            3693
+          ]
+        ],
+        "method": "multinomial_naive_bayes_unigram_surface_control",
+        "max_vocab": 5000,
+        "group_key": "topic_idx",
+        "interpretation": "This is a surface-form control, not a mechanistic probe. Strong performance means the synthetic text itself exposes lexical/style cues that may also make internal representations easy to classify."
+      }
+    },
+    "ai": {
+      "dialogue_group_cv": {
+        "accuracy": 0.7186638063132087,
+        "balanced_accuracy": 0.7302585074420394,
+        "macro_f1": 0.7320358221361483,
+        "recall": {
+          "anger": 0.6789347695990425,
+          "disgust": 0.6136919315403423,
+          "fear": 0.6721014492753623,
+          "joy": 0.8186846957590658,
+          "neutral": 0.935064935064935,
+          "sadness": 0.7508586525759577,
+          "surprise": 0.6424731182795699
+        },
+        "f1": {
+          "anger": 0.6469917308240661,
+          "disgust": 0.6933701657458564,
+          "fear": 0.6665668513250486,
+          "joy": 0.82336578581363,
+          "neutral": 0.9411764705882352,
+          "sadness": 0.7097015857160694,
+          "surprise": 0.6430781649401319
+        },
+        "n": 22841,
+        "confusion_matrix": [
+          [
+            2269,
+            285,
+            261,
+            77,
+            13,
+            228,
+            209
+          ],
+          [
+            631,
+            2008,
+            145,
+            121,
+            11,
+            207,
+            149
+          ],
+          [
+            181,
+            41,
+            2226,
+            46,
+            42,
+            320,
+            456
+          ],
+          [
+            125,
+            46,
+            42,
+            2664,
+            4,
+            225,
+            148
+          ],
+          [
+            17,
+            11,
+            16,
+            13,
+            2016,
+            29,
+            54
+          ],
+          [
+            187,
+            69,
+            263,
+            112,
+            5,
+            2842,
+            307
+          ],
+          [
+            262,
+            60,
+            414,
+            184,
+            37,
+            373,
+            2390
+          ]
+        ],
+        "method": "multinomial_naive_bayes_unigram_surface_control",
+        "max_vocab": 5000,
+        "group_key": "dialogue_id",
+        "interpretation": "This is a surface-form control, not a mechanistic probe. Strong performance means the synthetic text itself exposes lexical/style cues that may also make internal representations easy to classify."
+      },
+      "topic_group_cv": {
+        "accuracy": 0.7115712972286677,
+        "balanced_accuracy": 0.722575477085314,
+        "macro_f1": 0.7249924813201265,
+        "recall": {
+          "anger": 0.6600837821663674,
+          "disgust": 0.6066625916870416,
+          "fear": 0.6739130434782609,
+          "joy": 0.8146896127842655,
+          "neutral": 0.9179035250463822,
+          "sadness": 0.748216644649934,
+          "surprise": 0.6365591397849463
+        },
+        "f1": {
+          "anger": 0.6352771778257741,
+          "disgust": 0.6860203905304995,
+          "fear": 0.663693131132917,
+          "joy": 0.8164459501077918,
+          "neutral": 0.9332704550813486,
+          "sadness": 0.7032530419667246,
+          "surprise": 0.6369872225958305
+        },
+        "n": 22841,
+        "confusion_matrix": [
+          [
+            2206,
+            296,
+            271,
+            92,
+            11,
+            247,
+            219
+          ],
+          [
+            635,
+            1985,
+            157,
+            127,
+            8,
+            205,
+            155
+          ],
+          [
+            172,
+            34,
+            2232,
+            48,
+            44,
+            340,
+            442
+          ],
+          [
+            127,
+            56,
+            43,
+            2651,
+            4,
+            218,
+            155
+          ],
+          [
+            18,
+            8,
+            22,
+            19,
+            1979,
+            42,
+            68
+          ],
+          [
+            193,
+            70,
+            270,
+            109,
+            3,
+            2832,
+            308
+          ],
+          [
+            252,
+            66,
+            419,
+            194,
+            36,
+            385,
+            2368
+          ]
+        ],
+        "method": "multinomial_naive_bayes_unigram_surface_control",
+        "max_vocab": 5000,
+        "group_key": "topic_idx",
+        "interpretation": "This is a surface-form control, not a mechanistic probe. Strong performance means the synthetic text itself exposes lexical/style cues that may also make internal representations easy to classify."
+      }
+    },
+    "human": {
+      "dialogue_group_cv": {
+        "accuracy": 0.608214161144053,
+        "balanced_accuracy": 0.6289711927227876,
+        "macro_f1": 0.6314016710501006,
+        "recall": {
+          "anger": 0.5751266178953293,
+          "disgust": 0.5248057381948595,
+          "fear": 0.5959765297569153,
+          "joy": 0.6232114467408585,
+          "neutral": 0.9819025522041763,
+          "sadness": 0.6320067264573991,
+          "surprise": 0.4697687378099749
+        },
+        "f1": {
+          "anger": 0.5559635522915817,
+          "disgust": 0.6207140332272888,
+          "fear": 0.5750101091791345,
+          "joy": 0.6769124503539975,
+          "neutral": 0.9629124004550625,
+          "sadness": 0.5411567074634029,
+          "surprise": 0.4871424443802369
+        },
+        "n": 22936,
+        "confusion_matrix": [
+          [
+            2044,
+            227,
+            338,
+            116,
+            18,
+            373,
+            438
+          ],
+          [
+            620,
+            1756,
+            197,
+            107,
+            18,
+            435,
+            213
+          ],
+          [
+            290,
+            90,
+            2133,
+            61,
+            23,
+            634,
+            348
+          ],
+          [
+            176,
+            58,
+            120,
+            1960,
+            21,
+            452,
+            358
+          ],
+          [
+            4,
+            0,
+            15,
+            5,
+            2116,
+            4,
+            11
+          ],
+          [
+            218,
+            110,
+            554,
+            142,
+            10,
+            2255,
+            279
+          ],
+          [
+            447,
+            71,
+            483,
+            255,
+            34,
+            613,
+            1686
+          ]
+        ],
+        "method": "multinomial_naive_bayes_unigram_surface_control",
+        "max_vocab": 5000,
+        "group_key": "dialogue_id",
+        "interpretation": "This is a surface-form control, not a mechanistic probe. Strong performance means the synthetic text itself exposes lexical/style cues that may also make internal representations easy to classify."
+      },
+      "topic_group_cv": {
+        "accuracy": 0.6036798046738752,
+        "balanced_accuracy": 0.6241736607194556,
+        "macro_f1": 0.6273009005212362,
+        "recall": {
+          "anger": 0.5737197523916714,
+          "disgust": 0.5277943813508668,
+          "fear": 0.594020676166527,
+          "joy": 0.6162162162162163,
+          "neutral": 0.9721577726218097,
+          "sadness": 0.6269618834080718,
+          "surprise": 0.45834494288102534
+        },
+        "f1": {
+          "anger": 0.5564197025515077,
+          "disgust": 0.6262411347517731,
+          "fear": 0.5718128025820334,
+          "joy": 0.6715176715176716,
+          "neutral": 0.9568394610641698,
+          "sadness": 0.533253873659118,
+          "surprise": 0.47502165752237946
+        },
+        "n": 22936,
+        "confusion_matrix": [
+          [
+            2039,
+            213,
+            323,
+            119,
+            23,
+            387,
+            450
+          ],
+          [
+            615,
+            1766,
+            197,
+            105,
+            17,
+            425,
+            221
+          ],
+          [
+            279,
+            79,
+            2126,
+            61,
+            24,
+            649,
+            361
+          ],
+          [
+            180,
+            56,
+            131,
+            1938,
+            20,
+            463,
+            357
+          ],
+          [
+            7,
+            2,
+            19,
+            5,
+            2095,
+            8,
+            19
+          ],
+          [
+            217,
+            108,
+            570,
+            142,
+            10,
+            2237,
+            284
+          ],
+          [
+            438,
+            70,
+            491,
+            257,
+            35,
+            653,
+            1645
+          ]
+        ],
+        "method": "multinomial_naive_bayes_unigram_surface_control",
+        "max_vocab": 5000,
+        "group_key": "topic_idx",
+        "interpretation": "This is a surface-form control, not a mechanistic probe. Strong performance means the synthetic text itself exposes lexical/style cues that may also make internal representations easy to classify."
+      }
+    }
+  },
+  "extended9": {
+    "all": {
+      "dialogue_group_cv": {
+        "accuracy": 0.5963794722910084,
+        "balanced_accuracy": 0.6118957750967218,
+        "macro_f1": 0.6122297542668034,
+        "recall": {
+          "anger": 0.5691705336426914,
+          "disgust": 0.5016621335750983,
+          "fear": 0.5129879553040197,
+          "joy": 0.634630411001719,
+          "neutral": 0.92229181164463,
+          "sadness": 0.5588195294437645,
+          "surprise": 0.46695854426050076,
+          "peaceful": 0.7045625658786328,
+          "powerful": 0.6359784911194395
+        },
+        "f1": {
+          "anger": 0.5346683013213458,
+          "disgust": 0.6077246933919092,
+          "fear": 0.5589816571790006,
+          "joy": 0.6712396694214876,
+          "neutral": 0.9034310384003635,
+          "sadness": 0.48656009473060985,
+          "surprise": 0.5121932918136115,
+          "peaceful": 0.6403448747776106,
+          "powerful": 0.5949241673652923
+        },
+        "n": 58555,
+        "confusion_matrix": [
+          [
+            3925,
+            470,
+            391,
+            206,
+            38,
+            653,
+            438,
+            140,
+            635
+          ],
+          [
+            1206,
+            3320,
+            194,
+            183,
+            37,
+            651,
+            253,
+            371,
+            403
+          ],
+          [
+            527,
+            86,
+            3535,
+            112,
+            128,
+            1167,
+            652,
+            253,
+            431
+          ],
+          [
+            274,
+            68,
+            75,
+            4061,
+            17,
+            590,
+            293,
+            643,
+            378
+          ],
+          [
+            23,
+            1,
+            62,
+            13,
+            3976,
+            32,
+            94,
+            52,
+            58
+          ],
+          [
+            410,
+            132,
+            496,
+            181,
+            18,
+            4109,
+            404,
+            1174,
+            429
+          ],
+          [
+            695,
+            96,
+            657,
+            473,
+            107,
+            1093,
+            3413,
+            335,
+            440
+          ],
+          [
+            129,
+            52,
+            99,
+            287,
+            112,
+            783,
+            193,
+            4679,
+            307
+          ],
+          [
+            597,
+            83,
+            248,
+            185,
+            58,
+            459,
+            278,
+            326,
+            3903
+          ]
+        ],
+        "method": "multinomial_naive_bayes_unigram_surface_control",
+        "max_vocab": 5000,
+        "group_key": "dialogue_id",
+        "interpretation": "This is a surface-form control, not a mechanistic probe. Strong performance means the synthetic text itself exposes lexical/style cues that may also make internal representations easy to classify."
+      },
+      "topic_group_cv": {
+        "accuracy": 0.5905217317052344,
+        "balanced_accuracy": 0.605303398159134,
+        "macro_f1": 0.6066571936225391,
+        "recall": {
+          "anger": 0.5613399071925754,
+          "disgust": 0.4989422786340284,
+          "fear": 0.5109563198374691,
+          "joy": 0.630098452883263,
+          "neutral": 0.8963117606123869,
+          "sadness": 0.5486196110431116,
+          "surprise": 0.4644958270625257,
+          "peaceful": 0.7024544496310796,
+          "powerful": 0.6345119765357666
+        },
+        "f1": {
+          "anger": 0.5291866028708134,
+          "disgust": 0.6072085325487312,
+          "fear": 0.556591843186848,
+          "joy": 0.6647432198499712,
+          "neutral": 0.8913494809688581,
+          "sadness": 0.47728348319924274,
+          "surprise": 0.5081194342587744,
+          "peaceful": 0.6341330795894787,
+          "powerful": 0.5912990661301344
+        },
+        "n": 58555,
+        "confusion_matrix": [
+          [
+            3871,
+            461,
+            403,
+            221,
+            34,
+            660,
+            431,
+            166,
+            649
+          ],
+          [
+            1169,
+            3302,
+            200,
+            199,
+            33,
+            658,
+            268,
+            383,
+            406
+          ],
+          [
+            538,
+            75,
+            3521,
+            115,
+            133,
+            1185,
+            637,
+            255,
+            432
+          ],
+          [
+            288,
+            65,
+            77,
+            4032,
+            13,
+            600,
+            289,
+            656,
+            379
+          ],
+          [
+            26,
+            6,
+            76,
+            11,
+            3864,
+            44,
+            124,
+            76,
+            84
+          ],
+          [
+            403,
+            131,
+            506,
+            193,
+            14,
+            4034,
+            436,
+            1207,
+            429
+          ],
+          [
+            674,
+            87,
+            658,
+            476,
+            107,
+            1119,
+            3395,
+            342,
+            451
+          ],
+          [
+            138,
+            54,
+            95,
+            280,
+            109,
+            790,
+            200,
+            4665,
+            310
+          ],
+          [
+            627,
+            77,
+            225,
+            205,
+            52,
+            461,
+            274,
+            322,
+            3894
+          ]
+        ],
+        "method": "multinomial_naive_bayes_unigram_surface_control",
+        "max_vocab": 5000,
+        "group_key": "topic_idx",
+        "interpretation": "This is a surface-form control, not a mechanistic probe. Strong performance means the synthetic text itself exposes lexical/style cues that may also make internal representations easy to classify."
+      }
+    },
+    "ai": {
+      "dialogue_group_cv": {
+        "accuracy": 0.673534453205348,
+        "balanced_accuracy": 0.6859572425924628,
+        "macro_f1": 0.6861279907726139,
+        "recall": {
+          "anger": 0.6382405745062837,
+          "disgust": 0.5751833740831296,
+          "fear": 0.6452294685990339,
+          "joy": 0.7393976644130301,
+          "neutral": 0.9183673469387755,
+          "sadness": 0.5799207397622193,
+          "surprise": 0.6088709677419355,
+          "peaceful": 0.7401551312649165,
+          "powerful": 0.7282499160228418
+        },
+        "f1": {
+          "anger": 0.6144318018147775,
+          "disgust": 0.6658411462940033,
+          "fear": 0.6503347534996956,
+          "joy": 0.7736334405144695,
+          "neutral": 0.9211444521981857,
+          "sadness": 0.5926025917926566,
+          "surprise": 0.6159075458871517,
+          "peaceful": 0.6566966649020646,
+          "powerful": 0.6845595200505211
+        },
+        "n": 29170,
+        "confusion_matrix": [
+          [
+            2133,
+            246,
+            200,
+            70,
+            9,
+            180,
+            177,
+            106,
+            221
+          ],
+          [
+            581,
+            1882,
+            132,
+            92,
+            5,
+            144,
+            128,
+            199,
+            109
+          ],
+          [
+            159,
+            35,
+            2137,
+            29,
+            43,
+            248,
+            411,
+            90,
+            160
+          ],
+          [
+            103,
+            33,
+            29,
+            2406,
+            3,
+            138,
+            111,
+            296,
+            135
+          ],
+          [
+            14,
+            7,
+            14,
+            6,
+            1980,
+            20,
+            35,
+            57,
+            23
+          ],
+          [
+            149,
+            55,
+            219,
+            49,
+            3,
+            2195,
+            232,
+            696,
+            187
+          ],
+          [
+            216,
+            50,
+            354,
+            154,
+            36,
+            292,
+            2265,
+            146,
+            207
+          ],
+          [
+            78,
+            36,
+            45,
+            115,
+            47,
+            267,
+            136,
+            2481,
+            147
+          ],
+          [
+            168,
+            37,
+            130,
+            45,
+            17,
+            139,
+            140,
+            133,
+            2168
+          ]
+        ],
+        "method": "multinomial_naive_bayes_unigram_surface_control",
+        "max_vocab": 5000,
+        "group_key": "dialogue_id",
+        "interpretation": "This is a surface-form control, not a mechanistic probe. Strong performance means the synthetic text itself exposes lexical/style cues that may also make internal representations easy to classify."
+      },
+      "topic_group_cv": {
+        "accuracy": 0.667980802194035,
+        "balanced_accuracy": 0.6801414718107132,
+        "macro_f1": 0.6806771393799298,
+        "recall": {
+          "anger": 0.6190903650508678,
+          "disgust": 0.5715158924205379,
+          "fear": 0.6461352657004831,
+          "joy": 0.7384757221880762,
+          "neutral": 0.9049165120593692,
+          "sadness": 0.5754293262879788,
+          "surprise": 0.6010752688172043,
+          "peaceful": 0.7407517899761337,
+          "powerful": 0.7238831037957676
+        },
+        "f1": {
+          "anger": 0.6029433192481423,
+          "disgust": 0.6626506024096386,
+          "fear": 0.6464280320193324,
+          "joy": 0.7680997283042992,
+          "neutral": 0.9168233082706766,
+          "sadness": 0.5861141011840688,
+          "surprise": 0.6117647058823529,
+          "peaceful": 0.654023442644541,
+          "powerful": 0.6772470144563166
+        },
+        "n": 29170,
+        "confusion_matrix": [
+          [
+            2069,
+            261,
+            218,
+            79,
+            9,
+            191,
+            180,
+            104,
+            231
+          ],
+          [
+            568,
+            1870,
+            141,
+            106,
+            6,
+            139,
+            134,
+            207,
+            101
+          ],
+          [
+            149,
+            28,
+            2140,
+            34,
+            42,
+            266,
+            390,
+            98,
+            165
+          ],
+          [
+            97,
+            36,
+            25,
+            2403,
+            2,
+            135,
+            108,
+            296,
+            152
+          ],
+          [
+            12,
+            3,
+            18,
+            9,
+            1951,
+            28,
+            41,
+            63,
+            31
+          ],
+          [
+            151,
+            46,
+            215,
+            55,
+            2,
+            2178,
+            237,
+            715,
+            186
+          ],
+          [
+            219,
+            54,
+            365,
+            152,
+            32,
+            301,
+            2236,
+            152,
+            209
+          ],
+          [
+            79,
+            36,
+            50,
+            113,
+            41,
+            266,
+            127,
+            2483,
+            157
+          ],
+          [
+            177,
+            38,
+            137,
+            52,
+            15,
+            143,
+            137,
+            123,
+            2155
+          ]
+        ],
+        "method": "multinomial_naive_bayes_unigram_surface_control",
+        "max_vocab": 5000,
+        "group_key": "topic_idx",
+        "interpretation": "This is a surface-form control, not a mechanistic probe. Strong performance means the synthetic text itself exposes lexical/style cues that may also make internal representations easy to classify."
+      }
+    },
+    "human": {
+      "dialogue_group_cv": {
+        "accuracy": 0.5858431172366854,
+        "balanced_accuracy": 0.6037887647141749,
+        "macro_f1": 0.6054802752408862,
+        "recall": {
+          "anger": 0.5126617895329206,
+          "disgust": 0.4934249850567842,
+          "fear": 0.5708298407376362,
+          "joy": 0.5503974562798092,
+          "neutral": 0.9721577726218097,
+          "sadness": 0.5426008968609866,
+          "surprise": 0.4329896907216495,
+          "peaceful": 0.68561872909699,
+          "powerful": 0.6734177215189874
+        },
+        "f1": {
+          "anger": 0.5082287308228731,
+          "disgust": 0.5947406340057637,
+          "fear": 0.5486773197260643,
+          "joy": 0.6085428018984005,
+          "neutral": 0.948822463768116,
+          "sadness": 0.4617219174815168,
+          "surprise": 0.44997828290140435,
+          "peaceful": 0.6556185492077335,
+          "powerful": 0.6729917773561037
+        },
+        "n": 29385,
+        "confusion_matrix": [
+          [
+            1822,
+            205,
+            307,
+            97,
+            17,
+            343,
+            406,
+            44,
+            313
+          ],
+          [
+            533,
+            1651,
+            184,
+            78,
+            13,
+            386,
+            191,
+            132,
+            178
+          ],
+          [
+            270,
+            65,
+            2043,
+            51,
+            19,
+            608,
+            312,
+            120,
+            91
+          ],
+          [
+            133,
+            47,
+            95,
+            1731,
+            16,
+            358,
+            332,
+            295,
+            138
+          ],
+          [
+            5,
+            0,
+            10,
+            2,
+            2095,
+            5,
+            13,
+            9,
+            16
+          ],
+          [
+            195,
+            87,
+            510,
+            100,
+            6,
+            1936,
+            261,
+            410,
+            63
+          ],
+          [
+            393,
+            62,
+            486,
+            226,
+            29,
+            550,
+            1554,
+            167,
+            122
+          ],
+          [
+            35,
+            27,
+            109,
+            154,
+            30,
+            460,
+            104,
+            2255,
+            115
+          ],
+          [
+            230,
+            62,
+            124,
+            105,
+            36,
+            172,
+            145,
+            158,
+            2128
+          ]
+        ],
+        "method": "multinomial_naive_bayes_unigram_surface_control",
+        "max_vocab": 5000,
+        "group_key": "dialogue_id",
+        "interpretation": "This is a surface-form control, not a mechanistic probe. Strong performance means the synthetic text itself exposes lexical/style cues that may also make internal representations easy to classify."
+      },
+      "topic_group_cv": {
+        "accuracy": 0.5842776927003573,
+        "balanced_accuracy": 0.6018049258037803,
+        "macro_f1": 0.603854842437218,
+        "recall": {
+          "anger": 0.5129431626336522,
+          "disgust": 0.4913329348475792,
+          "fear": 0.5730651019837943,
+          "joy": 0.5392686804451511,
+          "neutral": 0.9642691415313225,
+          "sadness": 0.5445627802690582,
+          "surprise": 0.43354694901086654,
+          "peaceful": 0.6904834296138644,
+          "powerful": 0.6667721518987342
+        },
+        "f1": {
+          "anger": 0.5097874720357942,
+          "disgust": 0.5951131221719457,
+          "fear": 0.5523835173713978,
+          "joy": 0.5992932862190813,
+          "neutral": 0.9443308339013861,
+          "sadness": 0.45917523336878174,
+          "surprise": 0.4494511842865396,
+          "peaceful": 0.6580701246015649,
+          "powerful": 0.6670888079784708
+        },
+        "n": 29385,
+        "confusion_matrix": [
+          [
+            1823,
+            189,
+            292,
+            104,
+            18,
+            364,
+            409,
+            43,
+            312
+          ],
+          [
+            543,
+            1644,
+            168,
+            87,
+            16,
+            383,
+            199,
+            127,
+            179
+          ],
+          [
+            249,
+            65,
+            2051,
+            54,
+            21,
+            598,
+            332,
+            123,
+            86
+          ],
+          [
+            139,
+            42,
+            105,
+            1696,
+            15,
+            375,
+            326,
+            307,
+            140
+          ],
+          [
+            7,
+            1,
+            15,
+            4,
+            2078,
+            4,
+            16,
+            10,
+            20
+          ],
+          [
+            199,
+            85,
+            526,
+            98,
+            6,
+            1943,
+            248,
+            400,
+            63
+          ],
+          [
+            389,
+            54,
+            458,
+            219,
+            26,
+            602,
+            1556,
+            157,
+            128
+          ],
+          [
+            37,
+            30,
+            101,
+            147,
+            30,
+            444,
+            107,
+            2271,
+            122
+          ],
+          [
+            212,
+            69,
+            131,
+            106,
+            36,
+            182,
+            142,
+            175,
+            2107
+          ]
+        ],
+        "method": "multinomial_naive_bayes_unigram_surface_control",
+        "max_vocab": 5000,
+        "group_key": "topic_idx",
+        "interpretation": "This is a surface-form control, not a mechanistic probe. Strong performance means the synthetic text itself exposes lexical/style cues that may also make internal representations easy to classify."
+      }
+    }
+  }
+}

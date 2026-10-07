@@ -1,0 +1,120 @@
+{
+  "classes": [
+    "anger",
+    "disgust",
+    "fear",
+    "joy",
+    "neutral",
+    "sadness",
+    "surprise"
+  ],
+  "direction_norms": {
+    "anger": 25.550046920776367,
+    "disgust": 28.107425689697266,
+    "fear": 25.436080932617188,
+    "joy": 29.89529800415039,
+    "neutral": 67.16253662109375,
+    "sadness": 27.80476188659668,
+    "surprise": 21.830141067504883
+  },
+  "direction_cosine_matrix": [
+    [
+      1.0,
+      0.4607628285884857,
+      0.04502329230308533,
+      -0.04658360779285431,
+      -0.5177472829818726,
+      -0.057761527597904205,
+      -0.08585500717163086
+    ],
+    [
+      0.4607628285884857,
+      0.9999997615814209,
+      -0.16358698904514313,
+      0.15098679065704346,
+      -0.5733858942985535,
+      0.22213627398014069,
+      -0.36184513568878174
+    ],
+    [
+      0.04502329230308533,
+      -0.16358698904514313,
+      1.0,
+      -0.33458244800567627,
+      -0.3812793791294098,
+      0.26835358142852783,
+      0.2821877896785736
+    ],
+    [
+      -0.04658360779285431,
+      0.15098679065704346,
+      -0.33458244800567627,
+      1.0,
+      -0.3631364703178406,
+      0.055551525205373764,
+      -0.07301390916109085
+    ],
+    [
+      -0.5177472829818726,
+      -0.5733858942985535,
+      -0.3812793791294098,
+      -0.3631364703178406,
+      1.0000001192092896,
+      -0.5315855145454407,
+      -0.113729327917099
+    ],
+    [
+      -0.057761527597904205,
+      0.22213627398014069,
+      0.26835358142852783,
+      0.055551525205373764,
+      -0.5315855145454407,
+      0.9999998807907104,
+      -0.2453763484954834
+    ],
+    [
+      -0.08585500717163086,
+      -0.36184513568878174,
+      0.2821877896785736,
+      -0.07301390916109085,
+      -0.113729327917099,
+      -0.2453763484954834,
+      0.9999998807907104
+    ]
+  ],
+  "train_direction_unit_counts": {
+    "anger": 795,
+    "disgust": 804,
+    "fear": 794,
+    "joy": 789,
+    "neutral": 800,
+    "sadness": 828,
+    "surprise": 838
+  },
+  "train_class_turn_counts": {
+    "anger": 5555,
+    "joy": 5129,
+    "fear": 5518,
+    "sadness": 5867,
+    "disgust": 5293,
+    "surprise": 5841,
+    "neutral": 3465
+  },
+  "eval_class_turn_counts": {
+    "anger": 1341,
+    "disgust": 1325,
+    "joy": 1270,
+    "fear": 1373,
+    "surprise": 1468,
+    "sadness": 1486,
+    "neutral": 846
+  },
+  "split_sha256": "ac072ad8ec1bcded36065ea151b0db818c42ca9a0e19117bda660b6f60f4b91c",
+  "notes": [
+    "No story data is used.",
+    "No model forward pass is required: the directions are derived from the already extracted contextual turn residual vectors.",
+    "The train/eval split is performed before direction construction and at dialogue/topic group level to prevent conversation leakage.",
+    "Each (dialogue, speaker) is averaged before class averaging so longer dialogues do not dominate the direction.",
+    "Neutral remains an ERC target class, so neutral-PC nuisance removal is intentionally not used."
+  ]
+}

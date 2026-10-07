@@ -1,0 +1,69 @@
+{
+  "method": "dialogue ERC direction = equal-weight class mean of training (dialogue,speaker) activation units minus equal-weight mean across class means",
+  "source_type": "dialogue_turn_vectors_train_split",
+  "turn_run_dir": "/Users/adamvu/AI_for_psychology/playground/emotion_vector_replication/results_phi3.5_full",
+  "model": "microsoft/Phi-3.5-mini-instruct",
+  "target_layer": 21,
+  "hidden_size": 3072,
+  "num_layers": 32,
+  "pooling_source": "mean over tokens belonging only to the target utterance",
+  "context_source": "all preceding tokens when full dialogue fits; otherwise bounded left context",
+  "label_space": "erc7",
+  "classes": [
+    "anger",
+    "disgust",
+    "fear",
+    "joy",
+    "neutral",
+    "sadness",
+    "surprise"
+  ],
+  "direction_source_speaker": "all",
+  "split_by": "dialogue",
+  "eval_fraction_requested": 0.2,
+  "seed": 42,
+  "num_train_dialogues": 3417,
+  "num_eval_dialogues": 851,
+  "num_train_turn_rows": 36668,
+  "num_eval_turn_rows": 9109,
+  "train_class_turn_counts": {
+    "anger": 5555,
+    "joy": 5129,
+    "fear": 5518,
+    "sadness": 5867,
+    "disgust": 5293,
+    "surprise": 5841,
+    "neutral": 3465
+  },
+  "eval_class_turn_counts": {
+    "anger": 1341,
+    "disgust": 1325,
+    "joy": 1270,
+    "fear": 1373,
+    "surprise": 1468,
+    "sadness": 1486,
+    "neutral": 846
+  },
+  "train_direction_unit_counts": {
+    "anger": 795,
+    "disgust": 804,
+    "fear": 794,
+    "joy": 789,
+    "neutral": 800,
+    "sadness": 828,
+    "surprise": 838
+  },
+  "metadata_fingerprint_sha256": "8f1b277cd3825e1194f452f0d511187886bea6350c0db8f99027863196fe8c4e",
+  "split_sha256": "ac072ad8ec1bcded36065ea151b0db818c42ca9a0e19117bda660b6f60f4b91c",
+  "split_detail": {
+    "split_by": "dialogue",
+    "stratification": "(person_emotion, ai_emotion)",
+    "num_strata": 61
+  },
+  "train_indices_file": "train_indices.npy",
+  "eval_indices_file": "eval_indices.npy",
+  "all_eligible_indices_file": "all_eligible_indices.npy",
+  "emotion_vectors_file": "emotion_vectors.npz",
+  "leakage_control": "emotion directions use training dialogues only; paper-style probe must evaluate eval_indices.npy only",
+  "neutral_handling": "neutral is a target ERC class; no neutral-PCA projection is applied"
+}

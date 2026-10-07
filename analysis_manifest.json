@@ -1,0 +1,34 @@
+{
+  "runs": [
+    {
+      "name": "qwen3_1.7b",
+      "turn_dir": "results_qwen3_1.7b_full",
+      "emotion_vectors": "results_qwen3_emotions/emotion_vectors.npz"
+    },
+    {
+      "name": "qwen2.5_3b",
+      "turn_dir": "results_qwen2.5_3b_full",
+      "emotion_vectors": "results_qwen2.5_3b_emotions/emotion_vectors.npz"
+    },
+    {
+      "name": "granite3.3_2b",
+      "turn_dir": "results_granite3.3_2b_full",
+      "emotion_vectors": "results_granite3.3_2b_emotions/emotion_vectors.npz"
+    },
+    {
+      "name": "smollm2_1.7b",
+      "turn_dir": "results_smollm2_1.7b_full",
+      "emotion_vectors": "results_smollm2_1.7b_emotions/emotion_vectors.npz"
+    },
+    {
+      "name": "llama3.2_3b",
+      "turn_dir": "results_llama3.2_3b_full",
+      "emotion_vectors": "results_llama3.2_3b_emotions/emotion_vectors.npz"
+    },
+    {
+      "name": "phi3.5_mini",
+      "turn_dir": "results_phi3.5_full",
+      "emotion_vectors": "results_phi3.5_emotions/emotion_vectors.npz"
+    }
+  ]
+}

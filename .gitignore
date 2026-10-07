@@ -1,0 +1,18 @@
+# Local settings and credentials
+.DS_Store
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+
+# Python caches and environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Full-run activation arrays exceed GitHub's regular file-size limit.
+# Keep these locally and regenerate them when reproducing the analysis.
+results_*_full/turn_vectors.npy
